@@ -100,5 +100,8 @@ $(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
 # include board vendor blobs
 $(call inherit-product-if-exists, vendor/sony/loire-common/loire-partial.mk)
 
+# include suzu vendor blobs
+$(call inherit-product, vendor/sony/loire-suzu/suzu-vendor.mk)
+
 # include optional vendor configuration
 $(call inherit-product-if-exists, vendor/qcom/proprietary/common/build/qcom-packages.mk)
